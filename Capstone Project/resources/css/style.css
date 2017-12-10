@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500');
+
+/* Universal Styles */
+html {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+.main-content {
+  position: relative;
+  top: 4rem; /* To offset for fixed header. */
+}
+
+h2 {
+  font-size: 3rem;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+h3 {
+  color: #4a4a4a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.225rem;
+}
+
+p {
+  color: #4a4a4a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+p a {
+  color: #609be0;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 3;
+  border-bottom: solid 1px #d8d8d8;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  padding-left: 1.5rem;
+}
+
+nav.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 2rem;
+}
+
+.container div {
+  display: flex;
+}
+
+ul li {
+  display: inline;
+  padding-left: 1rem;
+}
+
+#sign_in {
+  padding-right: 1.5rem;
+}
+
+#colmar {
+  font-size: 1.225rem;
+}
+
+#academy {
+  line-height: 2rem;
+  color: #d8d8d8;
+  font-size: 1.225rem;
+}
+
+nav.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 560px) {
+  nav.container {
+    display: none;
+  }
+  nav.mobile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+
+/* Banner Section */
+div#banner {
+  position: relative;
+  background-color: #d8d8d8;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.image-content {
+  width: 60%;
+}
+
+img.large {
+  margin: 2rem 1.5rem;
+  width: 90%;
+}
+
+.banner-content {
+width: 40%;
+padding-left: 1.5rem;
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+}
+
+.banner-contents {
+  margin-top: 2rem;
+}
+
+#start_here {
+  background-color: #4a4a4a;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  width: 63%;
+}
+
+.banner-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 560px) {
+  div#banner {
+    display: none;
+  }
+  .banner-mobile {
+    width: 100%;
+    display: flex;
+    background-color: #d8d8d8;
+    flex-direction: column;
+  }
+
+  #mobile-image {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .banner-mobile-content {
+    margin: 2rem 1rem;
+  }
+
+  #b-header {
+    padding-bottom: 2rem;
+  }
+
+  #start_here_mobile {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: white;
+    background-color: #4a4a4a;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* Information Section */
+.information {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  max-height: 44rem;
+}
+
+.first-table {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  border-right: 1px solid #d8d8d8;
+  justify-content: center;
+}
+
+.info-content {
+  margin-left: 1.5rem;
+}
+
+p#vitae {
+  padding-top: 1.5rem;
+  line-height: 1.25rem;
+}
+
+#emanuel {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.news {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25rem;
+}
+
+.news p {
+  padding-top: 0.5rem;
+}
+
+#news-one {
+  display: flex;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+
+img.thumbnails {
+  max-width: 30%;
+  margin: 1rem;
+}
+
+div.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+
+#news-two {
+  display: flex;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+#news-three {
+  display: flex;
+  background-color: #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.news-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 560px) {
+  .information {
+    display: none;
+  }
+
+  .news-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .thumbnails-mobile {
+    height: auto;
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .mobile-text {
+    padding-left: 1rem;
+    line-height: 1.3;
+  }
+}
+
+/* Courses Section */
+.courses {
+  background-color: #eaebec;
+}
+
+.courses h2 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.galleries {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 4rem;
+  justify-content: center;
+}
+
+.gallery {
+  background-color: white;
+  flex-basis: 0;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gallery img {
+  width: 20rem;
+  height: 10rem;
+}
+
+ div.content {
+   height: 7.5rem;
+   padding: 1rem 0 1.5rem 1rem;
+   line-height: 1.250rem;
+ }
+
+ .title {
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+ }
+
+ .learning {
+   display: none;
+ }
+
+@media only screen and (max-width: 700px) {
+  .galleries {
+    display: none;
+  }
+
+  .courses {
+    background-color: white;
+    border-top: 1px solid #eaebec;
+  }
+
+  .learning {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .learning h3 {
+    background-color: #eaebec;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    line-height: 2rem;
+  }
+
+  .learning p {
+    line-height: 0.5rem;
+    visibility: hidden;
+  }
+
+  .learning p#bottom {
+    visibility: hidden;
+    padding-bottom: 1rem;
+  }
+
+}
+
+/* Thesis Section */
+.thesis {
+  background-color: white;
+}
+
+#thesis {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.thesis-container {
+  display: flex;
+  width: 100%;
+}
+
+.thesis-first-column {
+  width: 60%;
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+
+.thesis-content {
+  padding-top: 1.5rem;
+  line-height: 1.250rem;
+}
+
+.thesis-content p {
+  padding-top: 0.5rem;
+}
+
+p#urban {
+  margin-top: 0.5rem;
+}
+
+.thesis-second-column {
+  width: 40%;
+}
+
+#thesis-news {
+  background-color: #d8d8d8;
+}
+
+.thesis-news {
+  display: flex;
+  align-items: center;
+}
+
+.video {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .thesis-container {
+    display: none;
+  }
+
+  .thesis {
+    background-color: white;
+    border-top: 1px solid #eaebec;
+  }
+
+  .video {
+    display: block;
+    padding-bottom: 1.5rem;
+  }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 5.625rem;
+  background-color: white;
+  border-top: 1px solid #d8d8d8;
+  color: #4a4a4a;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.copyright {
+  margin: 1rem 1.5rem auto 1.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  ul {
+    display: none;
+  }
+  footer {
+    border-top: none;
+  }
+}
